@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:padding="10dp"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/text_message_body"
+        android:text=""
+        android:background="@drawable/bg_msg_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_message_body"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/text_message_body"
+        android:layout_toRightOf="@+id/text_message_body"
+        android:text=""
+        android:visibility="gone"
+        android:textSize="12sp"
+        />
+    <ImageView
+        android:id="@+id/message_image_layout"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:padding="8dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/text_message_body_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_msg_to"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:text=""
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/text_message_time_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_message_body_me"
+        android:layout_toLeftOf="@+id/text_message_body_me"
+        android:layout_toStartOf="@+id/text_message_body_me"
+        android:text=""
+        android:visibility="gone"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_image_layout_me"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_msg_to"
+        android:maxWidth="240dp"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/datet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:text="dateat" />
+
+
+
+</RelativeLayout>

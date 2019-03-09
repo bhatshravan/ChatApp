@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/posts_plus"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_add_box_black_24dp"
+                />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/post_single_vote_count_1"
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/posts_minus"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_minus_box_black_24dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/post_single_title_1"
+                android:layout_width="wrap_content"
+                android:text="Title"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/post_single_text_1"
+                android:textColor="#222222"
+                android:text="hello"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/post_single_image_1"
+                android:layout_width="250dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_height="250dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
